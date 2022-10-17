@@ -1,0 +1,33 @@
+#N canvas 270 200 1027 347 12;
+#X obj 126 160 pointer;
+#X obj 126 100 \$0;
+#X obj 273 190 filledpolygon 0 0 0 0 0 2 0 2 1 0 1;
+#X msg 198 70 clear;
+#X obj 198 101 s pd-\$0-hslider_vis;
+#X msg 126 130 traverse pd-\$1-hslider_vis \, bang;
+#N canvas 0 22 1353 376 \$0-hslider_vis 0;
+#X coords -1 0 1002 1 1000 90 2 0 0;
+#X restore 10 230 pd \$0-hslider_vis;
+#X obj 550 10 loadbang;
+#X obj 550 40 \$0;
+#X obj 550 132 s pd-\$0-hslider_vis;
+#X obj 54 10 r hslider_struct_rcv_\$1;
+#X msg 550 70 obj 500 1 cnv 15 18 30 mkfoo \$1-mk_foo_rcv 0 0 18 1
+30 0 0 0 \, donecanvasdialog 0 0 2 -1 0 1002 1 1000 90 0 0 \, dirty
+0 \, clear;
+#X obj 273 160 struct \$0-hsl_s float x float y;
+#X obj 54 40 trigger any bang bang;
+#X obj 10 190 append \$0-hsl_s x;
+#X text 398 324 Juan Ignacio Mendoza - 2022;
+#X connect 0 0 14 1;
+#X connect 1 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 7 0 8 0;
+#X connect 8 0 11 0;
+#X connect 10 0 13 0;
+#X connect 11 0 9 0;
+#X connect 13 0 14 0;
+#X connect 13 1 1 0;
+#X connect 13 2 3 0;
+#X coords 0 -1 1 1 1000 90 2 10 230;

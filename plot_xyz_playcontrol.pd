@@ -1,0 +1,563 @@
+#N struct hsl_s float x float y;
+#N canvas 358 291 1019 280 12;
+#X declare -lib iemmatrix;
+#N canvas 0 22 748 255 \$0-markers 0;
+#X coords 0 0 1000 1 1000 90 1;
+#X restore 1 5 pd \$0-markers;
+#X obj 302 110 inlet mode;
+#X obj 0 110 inlet play/stop/mark;
+#X obj 189 110 inlet xyz;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array \$0-x 1000 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 999 0 1000 30 1;
+#X restore 1 65 graph;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array \$0-y 1000 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 999 0 1000 30 1;
+#X restore 1 35 graph;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array \$0-z 1000 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 999 0 1000 30 1;
+#X restore 1 5 graph;
+#N canvas 740 307 622 707 arrays_control 0;
+#X obj 146 16 r \$0-xyz;
+#X msg 465 606 const 0;
+#X obj 72 656 tabwrite \$0-y;
+#X obj 182 656 tabwrite \$0-z;
+#X obj -38 516 unpack f f f;
+#X obj -38 656 tabwrite \$0-x;
+#X obj 315 656 s \$0-x;
+#X obj 392 656 s \$0-y;
+#X obj 465 656 s \$0-z;
+#X obj 465 46 r \$0-clear;
+#X obj 185 176 r \$0-mode;
+#X obj 146 276 spigot;
+#X obj 185 206 - 1;
+#X obj 185 236 abs;
+#X msg 395 356 0;
+#X obj 485 76 loadbang;
+#X obj 217 476 cup;
+#X obj 296 46 r \$0-playstopmark;
+#X obj 296 76 route mark;
+#X obj 146 146 spigot;
+#X msg 185 106 0;
+#X obj 195 76 r \$0-end;
+#X obj 285 516 moses 1000;
+#X obj 352 546 bang;
+#X obj 285 606 s \$0-scrollpos;
+#X obj 235 276 r \$0-mspp;
+#X obj 171 326 metro;
+#X obj 146 405 once;
+#X obj 363 136 t a a;
+#X obj 395 326 select 1;
+#X obj 185 46 r \$0-scrollend;
+#X obj 352 576 s \$0-scrollend;
+#X obj -38 405 spigot;
+#X obj 171 356 t b b b;
+#X obj 51 435 cyclone/gate 2;
+#X obj -38 475 list;
+#X obj 51 356 + 1;
+#X obj 1 216 r \$0-mspp;
+#X obj 19 246 r \$0-fps;
+#X obj 1 276 *;
+#X obj 1 326 < 1000;
+#X obj 51 326 >= 1000;
+#X connect 0 0 19 0;
+#X connect 1 0 8 0;
+#X connect 1 0 7 0;
+#X connect 1 0 6 0;
+#X connect 4 0 5 0;
+#X connect 4 1 2 0;
+#X connect 4 2 3 0;
+#X connect 9 0 1 0;
+#X connect 10 0 12 0;
+#X connect 11 0 27 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 1;
+#X connect 14 0 16 0;
+#X connect 15 0 1 0;
+#X connect 16 0 3 1;
+#X connect 16 0 2 1;
+#X connect 16 0 5 1;
+#X connect 16 0 22 0;
+#X connect 17 0 18 0;
+#X connect 18 1 19 1;
+#X connect 18 1 28 0;
+#X connect 19 0 11 0;
+#X connect 20 0 28 0;
+#X connect 20 0 19 1;
+#X connect 21 0 20 0;
+#X connect 22 0 24 0;
+#X connect 22 1 23 0;
+#X connect 23 0 31 0;
+#X connect 25 0 26 1;
+#X connect 26 0 33 0;
+#X connect 27 0 34 1;
+#X connect 28 0 26 0;
+#X connect 28 1 29 0;
+#X connect 29 0 14 0;
+#X connect 30 0 20 0;
+#X connect 32 0 35 0;
+#X connect 33 0 32 0;
+#X connect 33 1 27 1;
+#X connect 33 2 16 0;
+#X connect 34 0 35 1;
+#X connect 34 1 4 0;
+#X connect 35 0 4 0;
+#X connect 36 0 34 0;
+#X connect 37 0 39 0;
+#X connect 38 0 39 1;
+#X connect 39 0 41 0;
+#X connect 39 0 40 0;
+#X connect 40 0 32 1;
+#X connect 41 0 36 0;
+#X restore 878 170 pd arrays_control;
+#X obj 189 140 s \$0-xyz;
+#N canvas 174 35 470 794 information 0;
+#X text 32 66 0 = stop;
+#X text 12 46 INLET 1:;
+#X text 32 86 if full mode:;
+#X text 32 146 else \, if segment mode:;
+#X text 42 126 mark = add marker while playing;
+#X text 12 556 OUTLET 1:;
+#X text 12 606 OUTLET 2:;
+#X text 12 656 OUTLET 3:;
+#X text 12 706 OUTLET 4:;
+#X text 31 676 1 = start playback \, 0 = stop;
+#X text 12 6 Record xyz signal and control playback of another object
+\, either the full duration or segments indicated by markers.;
+#X text 12 196 INLET 2:;
+#X text 31 216 list = xyz control-rate signal;
+#X text 12 246 INLET 3:;
+#X text 31 516 bang = clear xyz plot and markers;
+#X text 12 316 INLET 4:;
+#X text 31 356 bang = external playback has reached its end;
+#X text 12 386 INLET 5:;
+#X text 12 496 INLET 6:;
+#X text 32 576 marker time (s);
+#X text 31 626 elapsed time (s);
+#X text 31 726 list = start time \, duration time (s);
+#X text 42 106 1 = record xyz and play full external;
+#X text 42 166 number of segment to play;
+#X text 81 426 If 1st. or 2nd. value is 0 \, then it will be ignored.
+;
+#X text 31 286 1 = segment mode: play segment \, don't record xyz;
+#X text 31 266 0 = full mode: play full duration and record xyz (default)
+;
+#X text 31 406 list = xyz rate (fps) \, resolution (ms) \, marker lag
+\, lag unit;
+#X text 81 446 Lag unit can be f (frame) \, or ms (miliseconds).;
+#X text 81 466 default = 20 10 0 f;
+#X text 31 336 float = external playback total duration (seconds);
+#X restore 899 140 pd information;
+#N canvas 848 304 251 573 external_playback_control 0;
+#X obj 83 352 r \$0-clear;
+#X obj 157 42 r \$0-mode;
+#X obj 27 82 select 0 1;
+#X msg 27 112 full;
+#X msg 73 112 segment;
+#X obj 9 382 playcontrol;
+#X obj 9 12 r \$0-playstopmark;
+#X obj 83 142 r \$0-end;
+#X obj 58 442 s \$0-playstop;
+#X obj 83 412 s \$0-startdur_T;
+#N canvas 794 378 320 465 playstopmark_lag 0;
+#X obj 6 12 inlet;
+#X obj 248 422 outlet;
+#X obj 157 172 r \$0-mlag_ms;
+#X obj 6 42 route mark;
+#X obj 125 202 delay;
+#X obj 6 302 spigot;
+#X msg 45 232 0;
+#X msg 125 232 1;
+#X obj 125 122 select 1;
+#X obj 45 82 r \$0-clear;
+#X obj 146 82 trigger any any;
+#X msg 6 332 mark;
+#X obj 55 122 r \$0-end;
+#X connect 0 0 3 0;
+#X connect 2 0 4 1;
+#X connect 3 0 5 0;
+#X connect 3 1 10 0;
+#X connect 4 0 7 0;
+#X connect 5 0 11 0;
+#X connect 6 0 5 1;
+#X connect 7 0 5 1;
+#X connect 8 0 4 0;
+#X connect 8 1 6 0;
+#X connect 9 0 6 0;
+#X connect 10 0 8 0;
+#X connect 10 1 1 0;
+#X connect 11 0 1 0;
+#X connect 12 0 6 0;
+#X restore 9 42 pd playstopmark_lag;
+#X obj 33 472 s \$0-etime_T;
+#X obj 136 252 r \$0-T;
+#X obj 83 222 r \$0-mlag_T;
+#X obj 83 282 pack f f;
+#X msg 83 312 \$2 \$1;
+#X obj 55 532 s \$0-mtime_T;
+#X obj 9 502 moses 0;
+#X obj 83 172 spigot;
+#X obj 157 142 == 0;
+#X connect 0 0 5 4;
+#X connect 1 0 2 0;
+#X connect 1 0 19 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 1;
+#X connect 5 0 17 0;
+#X connect 5 1 11 0;
+#X connect 5 2 8 0;
+#X connect 5 3 9 0;
+#X connect 6 0 10 0;
+#X connect 7 0 18 0;
+#X connect 10 0 5 0;
+#X connect 12 0 14 1;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 5 3;
+#X connect 17 1 16 0;
+#X connect 18 0 5 2;
+#X connect 19 0 18 1;
+#X restore 801 230 pd external_playback_control;
+#X obj 302 200 outlet start/stop playback;
+#X obj 0 200 outlet marker time;
+#X obj 147 200 outlet elapsed time;
+#X obj 302 170 r \$0-playstop;
+#X obj 785 110 inlet clear;
+#N canvas 0 23 270 236 startdur_seconds 0;
+#X obj 35 192 outlet;
+#X obj 35 42 unpack f f;
+#X obj 35 133 pack f f;
+#X obj 35 103 * 0.01;
+#X obj 102 103 * 0.01;
+#X obj 141 43 r \$0-Ts;
+#X obj -55 162 s \$0-mtime_s;
+#X obj 35 12 r \$0-startdur_T;
+#X connect 1 0 3 0;
+#X connect 1 1 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 2 1;
+#X connect 5 0 4 1;
+#X connect 5 0 3 1;
+#X connect 7 0 1 0;
+#X restore 505 170 pd startdur_seconds;
+#N canvas 437 302 808 336 scroll_markers_control 1;
+#X msg 301 230 clear;
+#X obj 301 290 s pd-\$0-markers;
+#X obj 83 260 pointer;
+#X msg 83 230 traverse pd-\$1-markers \, bang;
+#X obj 301 160 r \$0-clear;
+#X obj -40 10 r \$0-mtime_T;
+#X obj 83 200 \$0;
+#X obj -40 100 *;
+#X obj 75 70 filledpolygon 263 263 0 0 0 2 0 2 1 0 1;
+#X obj 431 10 r \$0-scrollpos;
+#X msg 371 230 0;
+#X obj 475 40 r \$0-etime_T;
+#X obj 475 100 *;
+#X obj 475 160 change;
+#X obj 431 230 multiplex 0 1;
+#X obj 519 200 r \$0-mode;
+#X obj 493 70 r \$0-T2p;
+#X obj -22 70 r \$0-T2p;
+#X obj -40 130 i;
+#X obj 475 130 i;
+#X obj 431 290 s hslider_struct_rcv_\$0;
+#X obj 75 40 struct \$0-marker float x float y;
+#X obj -40 290 append \$0-marker x;
+#X obj -40 160 t a b;
+#X connect 0 0 1 0;
+#X connect 2 0 22 1;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 4 0 10 0;
+#X connect 5 0 7 0;
+#X connect 6 0 3 0;
+#X connect 7 0 18 0;
+#X connect 9 0 14 0;
+#X connect 10 0 20 0;
+#X connect 11 0 12 0;
+#X connect 12 0 19 0;
+#X connect 13 0 14 1;
+#X connect 14 0 20 0;
+#X connect 15 0 14 2;
+#X connect 16 0 12 1;
+#X connect 17 0 7 1;
+#X connect 18 0 23 0;
+#X connect 19 0 13 0;
+#X connect 23 0 22 0;
+#X connect 23 1 6 0;
+#X restore 822 200 pd scroll_markers_control;
+#N canvas 152 430 176 148 elapsed_time 0;
+#X obj 10 70 * 0.01;
+#X obj 49 40 r \$0-Ts;
+#X obj 10 110 outlet;
+#X obj 10 10 r \$0-etime_T;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 0 0;
+#X restore 147 170 pd elapsed_time;
+#N canvas 8 452 224 224 marker_time 0;
+#X obj 20 90 * 0.01;
+#X obj 59 60 r \$0-Ts;
+#X obj 20 180 outlet;
+#X msg 120 100 set 0;
+#X obj 120 30 r \$0-clear;
+#X obj 120 130 r \$0-mtime_s;
+#X obj 20 30 r \$0-mtime_T;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
+#X connect 6 0 0 0;
+#X restore 0 170 pd marker_time;
+#X obj 424 110 inlet totaltime(s)/end;
+#N canvas 701 65 547 545 time_units 0;
+#X obj 1 -63 inlet totaltime(s)/end;
+#X obj 1 -3 s \$0-end;
+#X obj 264 57 select 0;
+#X obj 337 117 s \$0-Ts;
+#X obj 337 87 / 1000;
+#X obj 174 57 select 0;
+#X obj 399 447 s \$0-mlag_T;
+#X msg 174 87 20;
+#X msg 264 87 10;
+#X obj 317 147 s \$0-T;
+#X obj 227 147 s \$0-fps;
+#X obj 417 357 r \$0-T;
+#X obj 227 -3 s \$0-trig_T2f;
+#X obj 227 -33 trigger bang any;
+#X obj 132 147 r \$0-fps;
+#X obj 132 447 s \$0-mlag_ms;
+#X obj 399 417 /;
+#X obj 227 -63 inlet fps T mlag lagunit;
+#X obj 336 -3 unpack f f f s;
+#X obj 431 87 route f ms;
+#X obj 304 326 cyclone/gate 2;
+#X msg 431 117 1;
+#X msg 471 117 2;
+#X obj 431 177 s \$0-LU;
+#X obj 445 -33 loadbang;
+#X msg 431 57 \$1;
+#X msg 445 -3 symbol f;
+#X obj 132 357 expr ( $f1 / $f2 ) * 1000;
+#X obj 202 177 r \$0-LU;
+#X obj 202 237 select 2;
+#X msg 171 277 0;
+#X obj 202 207 trigger any any;
+#X obj 132 327 spigot;
+#X obj 1 -33 route bang;
+#X obj 68 147 /;
+#X msg 68 117 1 \$1;
+#X obj 68 177 s \$0-T2p;
+#X obj 68 87 / 10;
+#X obj 93 57 r \$0-T;
+#X text 44 287 and pixels;
+#X text 2 267 T2p = ratio of T;
+#X text 2 337 1000 pixels wide);
+#X text 2 317 (display is;
+#X obj 68 -3 t a a;
+#X obj 100 27 s \$0-mspp;
+#X text 2 217 mspp = miliseconds;
+#X text 50 237 per pixel;
+#X connect 0 0 33 0;
+#X connect 2 0 8 0;
+#X connect 2 1 4 0;
+#X connect 2 1 9 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 5 1 10 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 0;
+#X connect 11 0 16 1;
+#X connect 13 0 12 0;
+#X connect 13 1 18 0;
+#X connect 14 0 32 0;
+#X connect 16 0 6 0;
+#X connect 17 0 13 0;
+#X connect 18 0 5 0;
+#X connect 18 1 2 0;
+#X connect 18 2 20 1;
+#X connect 18 3 25 0;
+#X connect 19 0 21 0;
+#X connect 19 1 22 0;
+#X connect 20 0 27 1;
+#X connect 20 1 16 0;
+#X connect 20 1 15 0;
+#X connect 21 0 23 0;
+#X connect 22 0 23 0;
+#X connect 24 0 26 0;
+#X connect 25 0 19 0;
+#X connect 26 0 25 0;
+#X connect 27 0 15 0;
+#X connect 27 0 16 0;
+#X connect 28 0 31 0;
+#X connect 29 0 30 0;
+#X connect 29 1 32 1;
+#X connect 30 0 32 1;
+#X connect 31 0 29 0;
+#X connect 31 1 20 0;
+#X connect 32 0 27 0;
+#X connect 33 0 1 0;
+#X connect 33 1 43 0;
+#X connect 34 0 36 0;
+#X connect 35 0 34 0;
+#X connect 37 0 35 0;
+#X connect 38 0 37 1;
+#X connect 43 0 37 0;
+#X connect 43 1 44 0;
+#X restore 505 140 pd time_units;
+#X obj 0 140 s \$0-playstopmark;
+#X obj 885 110 import iemmatrix;
+#N canvas 357 236 118 155 init_mode 0;
+#X obj 21 14 inlet;
+#X obj 21 104 s \$0-mode;
+#X obj 31 44 loadbang;
+#X msg 31 74 0;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X restore 302 140 pd init_mode;
+#X obj 593 110 inlet fps T mlag lagunit;
+#N canvas 736 179 546 247 init_clear 0;
+#X obj 18 20 inlet clear;
+#X obj 18 80 s \$0-clear;
+#X obj 28 50 loadbang;
+#X connect 0 0 1 0;
+#X connect 2 0 1 0;
+#X restore 785 140 pd init_clear;
+#N canvas 830 243 265 224 check 0;
+#X obj -35 12 r \$0-playstopmark;
+#X obj -35 179 print plot_xyz_playcontrol error;
+#X msg -35 152 total time not entered (input 4);
+#X obj -35 122 spigot;
+#X obj 4 42 loadbang;
+#X msg 4 72 1;
+#X msg 74 72 0;
+#X obj 74 42 r \$0-mspp;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 6 0 3 1;
+#X connect 7 0 6 0;
+#X restore 672 140 pd check;
+#X obj 672 170 r \$0-scrollend;
+#X obj 672 200 outlet scroll end;
+#X obj 505 200 outlet start/duration;
+#N canvas 0 22 521 190 to-do 0;
+#X text 17 17 maybe it is better to resize the x \, y \, z arrays instead
+of fixing to size = 1000 \, that would make vies less than 50 seconds
+smooth;
+#X restore 189 230 pd to-do;
+#X text 388 230 Juan Ignacio Mendoza - 2022;
+#X obj 0 4 hslider_struct \$0;
+#X connect 1 0 24 0;
+#X connect 2 0 22 0;
+#X connect 3 0 8 0;
+#X connect 14 0 11 0;
+#X connect 15 0 26 0;
+#X connect 16 0 30 0;
+#X connect 18 0 13 0;
+#X connect 19 0 12 0;
+#X connect 20 0 21 0;
+#X connect 25 0 21 1;
+#X connect 28 0 29 0;
+#X coords 0 -1 1 1 1000 98 2 0 0;

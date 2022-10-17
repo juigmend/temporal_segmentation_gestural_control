@@ -1,0 +1,23 @@
+GESTURAL AUDIO REARRANGER 0.1
+
+DEPENDENCIES:
+
+- Pure Data Extended 0.42.5
+
+- Wekinator 2.1.0.4
+
+- Thalmic Myo armband
+
+- DaemonMYO
+
+OPERATION INSTRUCTIONS:
+
+1) With Pure Data closed, start Myo Connect and then DaemonMYO.
+
+2) Open or make a Wekinator DTW project with 3 inputs and at least 2 outputs (i.e., patterns, gestures).
+
+3) Start Pure Data allowing network connections, then open the patch “GESTURAL_AUDIO_REARRANGER_0.1”. 
+
+4) In Wekinator, click “Start listening”.
+
+5) Click the buttons on the patch and move the Myo.

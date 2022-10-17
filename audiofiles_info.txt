@@ -1,0 +1,3 @@
+HAPPY_Ahxello_-_Takeoff_128bpm_MONO_90s.wav:128;
+GRUNGE_Hansatom_-_Waste_of_TV_100bpm_MONO_86s.wav:100;
+CLASSICAL_Lee_Maddeford_-_Le_petit_jardin_(Les_Gauchers_Orchestra)_54bpm_MONO_84s.wav:54;HEAVY_Tri-Tachyon_-_Left_on_Deimos_80bpm_MONO_65s.wav:80;
