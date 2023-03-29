@@ -26,3 +26,6 @@ If the Myo stops working (red blinking light), try copying in it the firmware fi
 
 
 
+
+
+
