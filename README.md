@@ -24,6 +24,9 @@ https://github.com/benkuper/MyOSC
 
 If the Myo stops working (red blinking light), try copying in it the firmware file (myo-firmware-1.5.1970.hex) when connected with the USB cable.
 
+## Technical report:
+
+https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/reports/delayed_control_unsupervised_segmentation_LONG_AM.pdf
 
 
 
