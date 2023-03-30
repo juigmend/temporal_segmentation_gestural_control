@@ -1,5 +1,9 @@
 # temporal_segmentation_gestural_control
 
+## Poster:
+
+
+
 ## Instructions:
 
 https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/GESTURAL_AUDIO_REARRANGER_instructions.txt
