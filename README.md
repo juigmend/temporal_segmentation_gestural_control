@@ -15,7 +15,7 @@ https://puredata.info/downloads/pd-extended/releases/0.42.5
 
 http://www.wekinator.org/
 
-##  To get the Myo running:
+##  To get the Myo running in Mac Operating System:
 
 To get data from a Myo armband the Myo Connect software should be installed and the myo.framework file should be copied into ~/Library/Frameworks. If the Frameworks folder doesn’t exist you need to create it. Then the DaemonMYO script should be executed, just by double clicking on it.
 Download DaemonMYO from here:
