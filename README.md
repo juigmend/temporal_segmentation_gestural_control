@@ -2,7 +2,7 @@
 
 ## Poster:
 
-![Poster](https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/delayed_control_unsupervised_segmentation_POSTER.png)
+![Poster](https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/raw/main/delayed_control_unsupervised_segmentation_POSTER.png)
 
 ![Poster](https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/delayed_control_unsupervised_segmentation_POSTER.png)*Delayed Control Unsupervised Segmentation*
 
