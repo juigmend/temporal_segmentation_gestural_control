@@ -1,5 +1,7 @@
 # temporal_segmentation_gestural_control
 
+![rearranger_ball_DEMO_14_APR_2023.mp4](https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/raw/main/more_documentation/rearranger_ball_DEMO_14_APR_2023.mp4)
+
 ![Poster](https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/raw/main/more_documentation/delayed_control_unsupervised_segmentation_POSTER.png)
 
 More information:
