@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bevilacqua_etal_2010}
+F.~Bevilacqua, B.~Zamborlin, A.~Sypniewski, N.~Schnell, F.~Gu{\'e}dy, and
+  N.~Rasamimanana.
+\newblock Continuous realtime gesture following and recognition.
+\newblock In {\em Gesture in Embodied Communication and Human-Computer
+  Interaction}, pages 73--84. Springer, 2010.
+
+\bibitem{Burger_Toiviainen_2020}
+B.~Burger and P.~Toiviainen.
+\newblock Embodiment in electronic dance music: Effects of musical content and
+  structure on body movement.
+\newblock {\em Musicae Scientiae}, 24(2):186--205, 2020.
+
+\bibitem{Wekinator_website}
+R.~Fiebrink.
+\newblock http://www.wekinator.org/
+
+\bibitem{Fiebrink_etal_2009}
+R.~Fiebrink, D.~Trueman, and P.~R. Cook.
+\newblock A meta-instrument for interactive, on-the-fly machine learning.
+\newblock In {\em Proceedings of NIME}, 2009.
+
+\bibitem{Foote_2000}
+J.~Foote.
+\newblock Automatic audio segmentation using a measure of audio novelty.
+\newblock In {\em Proceedings of ICME2000}, vol.~1, pages 452--455, 2000.
+
+\bibitem{Foote_Cooper_2003}
+J.~Foote and M.~L. Cooper.
+\newblock Media segmentation using self-similarity decomposition.
+\newblock In {\em Proc. SPIE, Storage and Retrieval for Media Databases},
+  vol. 5021, pages 167--175., 2003.
+
+\bibitem{Gillian_etal_2011}
+N.~Gillian, B.~Knapp, and S.~O'modhrain.
+\newblock Recognition of multivariate temporal musical gestures using
+  n-dimensional dynamic time warping.
+\newblock In {\em Proceedings of NIME}, 2011.
+
+\vfill\eject
+
+\bibitem{Gillian_2011}
+N.~E. Gillian.
+\newblock {\em Gesture recognition for musician computer interaction}.
+\newblock PhD thesis, Queen's University Belfast, 2011.
+
+\bibitem{Jack_etal_2018}
+R.~H. Jack, A.~Mehrabi, T.~Stockman, and A.~McPherson.
+\newblock Action-sound latency and the perceived quality of digital musical
+  instruments: Comparing professional percussionists and amateur musicians.
+\newblock {\em Music Perception}, 36(1):109--128, 2018.
+
+\bibitem{McPherson_etal_2016}
+A.~McPherson, R.~Jack, and G.~Moro.
+\newblock Action-sound latency: Are our tools fast enough?
+\newblock In {\em Proceedings of NIME}, 2016.
+
+\bibitem{Mendoza_2022}
+J.~I. Mendoza.
+\newblock Segmentation boundaries in accelerometer data of arm motion induced
+  by music: Online computation and perceptual assessment.
+\newblock {\em Human Technology}, 18(3):250--266, 2022.
+
+\bibitem{Mendoza_etal_2022}
+J.~I. Mendoza, A.~Danso, G.~Luck, T.~Rantalainen, L.~Palmberg, and S.~Chastin.
+\newblock Musification of accelerometry data towards raising awareness of
+  physical activity.
+\newblock In {\em Proceedings of SoniHED}, 
+\newblock 2022.
+
+\bibitem{Mendoza_Thompson_2017}
+J.~I. Mendoza and M.~R. Thompson.
+\newblock Modelling perceived segmentation of bodily gestures induced by music.
+\newblock In {\em Proceedings of ESCOM}, pages 128--133. 2017.
+
+\bibitem{Merril_Paradiso_2005}
+D.~J. Merrill and J.~A. Paradiso.
+\newblock Personalization, expressivity, and learnability of an implicit
+  mapping strategy for physical interfaces.
+\newblock In {\em Proceedings of the CHI Conference on Human Factors in
+  Computing Systems}, pages 2152--2161, 2005.
+
+\bibitem{Moore_1988}
+F.~R. Moore.
+\newblock The dysfunctions of midi.
+\newblock {\em Computer music journal}, 12(1):19--28, 1988.
+
+\bibitem{Murad_etal_2017}
+D.~Murad, F.~Ye, M.~Barone, and Y.~Wang.
+\newblock Motion initiated music ensemble with sensors for motor
+  rehabilitation.
+\newblock In {\em 2017 international conference on orange technologies},
+  pages 87--90. IEEE, 2017.
+
+\bibitem{Rodrigues_Probst_Gamboa_2021}
+J.~Rodrigues, P.~Probst, and H.~Gamboa.
+\newblock Tssummarize: A visual strategy to summarize biosignals.
+\newblock In {\em International conference on Bio Signals, Images,
+  and Instrumentation}, pages 1--6, 2021.
+  
+\bibitem{Schatti_2007}
+G.~Sch{\"a}tti.
+\newblock Real-time audio feature analysis for decklight3, 2007.
+
+\bibitem{Staudt_etal_2022}
+E.~Staudt, Pascal;~Sarig{\"o}l, M.~Lussana, M.~Rizzonelli, and J.~Hyun~Kim.
+\newblock Automatic classification of interactive gestures for inter-body
+  proximity sonification.
+\newblock In {\em Proceedings of SoniHED},
+\newblock  2022.
+
+\bibitem{Tahiroglu_etal_2013}
+K.~Tahiro{\u g}lu, N.~N. Correia, and M.~Espada.
+\newblock Pesi extended system: In space, on body, with 3 musicians.
+\newblock In {\em Proceedings of NIME}, 2013.
+
+\bibitem{Tardieu_etal_2009}
+D.~Tardieu, R.~Chessini, J.~Dubois, S.~Dupont, S.~Hidot, B.~Mazzarino,
+  A.~Moinet, X.~Siebert, G.~Varni, and A.~Visentin.
+\newblock Video navigation tool: Application to browsing a database of dancers'
+  performances.
+\newblock In {\em 5th International Summer Workshop on Multimodal Interfaces}, pages
+  35 -- 40. 2009.
+
+\bibitem{Visi_2017}
+F.~Visi.
+\newblock {\em Methods and Technologies for the Analysis and Interactive Use of
+  Body Movements in Instrumental Music Performance}.
+\newblock PhD thesis, Plymouth University, 2017.
+
+\bibitem{Wessel_Wright_2002}
+D.~Wessel and M.~Wright.
+\newblock Problems and prospects for intimate musical control of computers.
+\newblock {\em Computer music journal}, 26(3):11--22, 2002.
+
+\end{thebibliography}
