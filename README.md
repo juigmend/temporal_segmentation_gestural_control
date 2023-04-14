@@ -6,9 +6,7 @@
 
 More information:
 
-* Short report: https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/more_documentation/delayed_control_unsupervised_segmentation_SHORT_NIME_2023.pdf
-* Less short report: https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/more_documentation/delayed_control_unsupervised_segmentation_LONG_AM.pdf
-
+https://gitlab.jyu.fi/juigmend/temporal_segmentation_gestural_control/-/blob/main/more_documentation/delayed_control_unsupervised_segmentation_SHORT_NIME_2023.pdf
 
 ## Instructions:
 
