@@ -1,6 +1,6 @@
 # temporal_segmentation_gestural_control
 
-Video: ![rearranger_ball_DEMO_14_APR_2023.mp4](https://drive.google.com/file/d/1c2nLic5NqYYAVPx4f7AA8BMjkndqgXpz/view?usp=sharing)
+Video: [rearranger_ball_DEMO_14_APR_2023.mp4](https://drive.google.com/file/d/1c2nLic5NqYYAVPx4f7AA8BMjkndqgXpz/view?usp=sharing)
 
 ![Poster](https://github.com/juigmend/temporal_segmentation_gestural_control/raw/main/more_documentation/delayed_control_unsupervised_segmentation_POSTER.png)
 
